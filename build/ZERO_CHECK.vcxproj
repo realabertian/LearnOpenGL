@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A435760-165D-310C-B8C0-C21A6DA0D65D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Projects\LearnOpenGL\build\CMakeFiles\d170c5c2749634f3e2c431e4da339c83\generate.stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+D:\Tools\cmake-3.21.2-windows-x86_64\bin\cmake.exe -SE:/Projects/LearnOpenGL -BE:/Projects/LearnOpenGL/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/LearnOpenGL/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeDependentOption.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckFunctionExists.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckIncludeFile.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckLibraryExists.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckTypeSize.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindDoxygen.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPkgConfig.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindThreads.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\GNUInstallDirs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;E:\Projects\LearnOpenGL\CMakeLists.txt;E:\Projects\LearnOpenGL\LearnOpenGL\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\assimp.pc.in;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\FindPkgMacros.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\FindZLIB.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\PrecompiledHeader.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\assimp-plain-config.cmake.in;E:\Projects\LearnOpenGL\assimp-5.2.4\code\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\zconf.h.cmakein;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\zlib.pc.cmakein;E:\Projects\LearnOpenGL\assimp-5.2.4\include\assimp\config.h.in;E:\Projects\LearnOpenGL\assimp-5.2.4\revision.h.in;E:\Projects\LearnOpenGL\assimp-5.2.4\test\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\test\headercheck\CMakeLists.txt;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeCCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeCXXCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeRCCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeSystem.cmake;E:\Projects\LearnOpenGL\glad-202204\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\cmake_uninstall.cmake.in;E:\Projects\LearnOpenGL\glfw-3.3.6\examples\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\src\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw3.pc.in;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw3Config.cmake.in;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw_config.h.in;E:\Projects\LearnOpenGL\glfw-3.3.6\tests\CMakeLists.txt;E:\Projects\LearnOpenGL\glm-0.9.9.8\CMakeLists.txt;E:\Projects\LearnOpenGL\glm-0.9.9.8\glm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">E:\Projects\LearnOpenGL\build\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glad-202204\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\src\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\examples\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\tests\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glm-0.9.9.8\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glm-0.9.9.8\glm\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\contrib\zlib\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\code\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\test\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\test\headercheck\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\LearnOpenGL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+D:\Tools\cmake-3.21.2-windows-x86_64\bin\cmake.exe -SE:/Projects/LearnOpenGL -BE:/Projects/LearnOpenGL/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/LearnOpenGL/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeDependentOption.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckFunctionExists.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckIncludeFile.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckLibraryExists.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckTypeSize.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindDoxygen.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPkgConfig.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindThreads.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\GNUInstallDirs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;E:\Projects\LearnOpenGL\CMakeLists.txt;E:\Projects\LearnOpenGL\LearnOpenGL\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\assimp.pc.in;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\FindPkgMacros.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\FindZLIB.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\PrecompiledHeader.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\assimp-plain-config.cmake.in;E:\Projects\LearnOpenGL\assimp-5.2.4\code\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\zconf.h.cmakein;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\zlib.pc.cmakein;E:\Projects\LearnOpenGL\assimp-5.2.4\include\assimp\config.h.in;E:\Projects\LearnOpenGL\assimp-5.2.4\revision.h.in;E:\Projects\LearnOpenGL\assimp-5.2.4\test\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\test\headercheck\CMakeLists.txt;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeCCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeCXXCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeRCCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeSystem.cmake;E:\Projects\LearnOpenGL\glad-202204\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\cmake_uninstall.cmake.in;E:\Projects\LearnOpenGL\glfw-3.3.6\examples\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\src\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw3.pc.in;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw3Config.cmake.in;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw_config.h.in;E:\Projects\LearnOpenGL\glfw-3.3.6\tests\CMakeLists.txt;E:\Projects\LearnOpenGL\glm-0.9.9.8\CMakeLists.txt;E:\Projects\LearnOpenGL\glm-0.9.9.8\glm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">E:\Projects\LearnOpenGL\build\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glad-202204\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\src\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\examples\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\tests\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glm-0.9.9.8\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glm-0.9.9.8\glm\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\contrib\zlib\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\code\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\test\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\test\headercheck\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\LearnOpenGL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+D:\Tools\cmake-3.21.2-windows-x86_64\bin\cmake.exe -SE:/Projects/LearnOpenGL -BE:/Projects/LearnOpenGL/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/LearnOpenGL/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeDependentOption.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckFunctionExists.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckIncludeFile.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckLibraryExists.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckTypeSize.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindDoxygen.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPkgConfig.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindThreads.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\GNUInstallDirs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;E:\Projects\LearnOpenGL\CMakeLists.txt;E:\Projects\LearnOpenGL\LearnOpenGL\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\assimp.pc.in;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\FindPkgMacros.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\FindZLIB.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\PrecompiledHeader.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\assimp-plain-config.cmake.in;E:\Projects\LearnOpenGL\assimp-5.2.4\code\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\zconf.h.cmakein;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\zlib.pc.cmakein;E:\Projects\LearnOpenGL\assimp-5.2.4\include\assimp\config.h.in;E:\Projects\LearnOpenGL\assimp-5.2.4\revision.h.in;E:\Projects\LearnOpenGL\assimp-5.2.4\test\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\test\headercheck\CMakeLists.txt;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeCCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeCXXCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeRCCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeSystem.cmake;E:\Projects\LearnOpenGL\glad-202204\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\cmake_uninstall.cmake.in;E:\Projects\LearnOpenGL\glfw-3.3.6\examples\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\src\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw3.pc.in;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw3Config.cmake.in;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw_config.h.in;E:\Projects\LearnOpenGL\glfw-3.3.6\tests\CMakeLists.txt;E:\Projects\LearnOpenGL\glm-0.9.9.8\CMakeLists.txt;E:\Projects\LearnOpenGL\glm-0.9.9.8\glm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">E:\Projects\LearnOpenGL\build\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glad-202204\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\src\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\examples\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\tests\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glm-0.9.9.8\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glm-0.9.9.8\glm\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\contrib\zlib\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\code\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\test\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\test\headercheck\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\LearnOpenGL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+D:\Tools\cmake-3.21.2-windows-x86_64\bin\cmake.exe -SE:/Projects/LearnOpenGL -BE:/Projects/LearnOpenGL/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/LearnOpenGL/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeDependentOption.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckFunctionExists.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckIncludeFile.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckLibraryExists.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\CheckTypeSize.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindDoxygen.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindPkgConfig.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\FindThreads.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\GNUInstallDirs.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Tools\cmake-3.21.2-windows-x86_64\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;E:\Projects\LearnOpenGL\CMakeLists.txt;E:\Projects\LearnOpenGL\LearnOpenGL\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\assimp.pc.in;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\FindPkgMacros.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\FindZLIB.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\PrecompiledHeader.cmake;E:\Projects\LearnOpenGL\assimp-5.2.4\cmake-modules\assimp-plain-config.cmake.in;E:\Projects\LearnOpenGL\assimp-5.2.4\code\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\zconf.h.cmakein;E:\Projects\LearnOpenGL\assimp-5.2.4\contrib\zlib\zlib.pc.cmakein;E:\Projects\LearnOpenGL\assimp-5.2.4\include\assimp\config.h.in;E:\Projects\LearnOpenGL\assimp-5.2.4\revision.h.in;E:\Projects\LearnOpenGL\assimp-5.2.4\test\CMakeLists.txt;E:\Projects\LearnOpenGL\assimp-5.2.4\test\headercheck\CMakeLists.txt;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeCCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeCXXCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeRCCompiler.cmake;E:\Projects\LearnOpenGL\build\CMakeFiles\3.21.2\CMakeSystem.cmake;E:\Projects\LearnOpenGL\glad-202204\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\cmake_uninstall.cmake.in;E:\Projects\LearnOpenGL\glfw-3.3.6\examples\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\src\CMakeLists.txt;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw3.pc.in;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw3Config.cmake.in;E:\Projects\LearnOpenGL\glfw-3.3.6\src\glfw_config.h.in;E:\Projects\LearnOpenGL\glfw-3.3.6\tests\CMakeLists.txt;E:\Projects\LearnOpenGL\glm-0.9.9.8\CMakeLists.txt;E:\Projects\LearnOpenGL\glm-0.9.9.8\glm\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">E:\Projects\LearnOpenGL\build\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glad-202204\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\src\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\examples\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glfw-3.3.6\tests\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glm-0.9.9.8\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\glm-0.9.9.8\glm\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\contrib\zlib\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\code\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\test\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\assimp-5.2.4\test\headercheck\CMakeFiles\generate.stamp;E:\Projects\LearnOpenGL\build\LearnOpenGL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
