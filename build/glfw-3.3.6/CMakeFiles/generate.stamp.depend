@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/CMakeDependentOption.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/CheckIncludeFile.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/CheckLibraryExists.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/FindDoxygen.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/FindPackageMessage.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/FindThreads.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/GNUInstallDirs.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake
+D:/Tools/cmake-3.21.2-windows-x86_64/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake
+E:/Projects/LearnOpenGL/glfw-3.3.6/CMakeLists.txt
+E:/Projects/LearnOpenGL/glfw-3.3.6/cmake_uninstall.cmake.in
+E:/Projects/LearnOpenGL/glfw-3.3.6/src/glfw3.pc.in
+E:/Projects/LearnOpenGL/glfw-3.3.6/src/glfw3Config.cmake.in
+E:/Projects/LearnOpenGL/glfw-3.3.6/src/glfw_config.h.in
