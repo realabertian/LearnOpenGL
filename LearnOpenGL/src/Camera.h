@@ -7,8 +7,6 @@
 
 #include <vector>
 
-// TODO 使用四元数 进行摄像机姿态的变换
-
 // Defines several possible options for camera movement. Used as abstraction to stay away from window-system specific input methods
 enum Camera_Movement {
     FORWARD,

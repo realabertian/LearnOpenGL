@@ -18,7 +18,7 @@ public:
 
 private:
 	// model data
-	std::vector<Texture> textures_loaded;// 已经加载的纹理数据
+	std::vector<Texture> textures_loaded;
 	std::vector<Mesh> meshes;
 	std::string directory;
 	bool gammaCorrection;

@@ -1,6 +1,6 @@
 #include "Mesh.h"
 #include <string>
-
+#include <memory>
 
 
 Mesh::Mesh(std::vector<Vertex>& vertices, std::vector<GLuint>& indices, std::vector<Texture>& textures) {
@@ -11,44 +11,35 @@ Mesh::Mesh(std::vector<Vertex>& vertices, std::vector<GLuint>& indices, std::vec
 	setupMesh();
 }
 
-// äÖÈ¾
-	// ÕâÀïÓÉÒ»Ğ©À§ÄÑµã, Ê×ÏÈ ¶ÔÓÚÕâ¸öMeshÊı¾İÀ´Ëµ,ÎÒÃÇÔÚµ÷ÓÃglDrawElements½øĞĞ»æÖÆÖ®Ç°,ĞèÒªÏÈ°ó¶¨ÎÆÀí,µ«ÊÇÊµ¼ÊÉÏ,ÎÒÃÇ²¢²»ÖªµÀ
-	// ¾¿¾¹ÓÉ¶àÉÙÎÆÀí,ÒÔ¼°ÕâĞ©ÎÆÀíÊÇÊ²Ã´ÀàĞÍµÄÎÆÀí, ËùÒÔÎÒÃÇÔõÃ´ÔÚ×ÅÉ«Æ÷ÖĞÀ´ÉùÃ÷ÕâĞ©ÎÆÀí±äÁ¿,ÒÔ¼°ÈçºÎÉèÖÃÄØ?
-	// ÎªÁË½â¾öÕâ¸öÎÊÌâ,ÎÒÃÇĞèÒªÉè¶¨Ò»¸öÃüÃû±ê×¼, Ã¿¸öÂş·´ÉäµÄÎÆÀíÔÚ×ÅÉ«Æ÷ÖĞ±»ÉùÃ÷Îªtextture_diffuseN, Ã¿¸ö¾µÃæ¹âÎÆÀíÔò±»ÉùÃ÷
-	// Îªtexture_specularN, ÆäÖĞ×ÖÄ¸NÊÇ·¶Î§Îª1µ½ÎÆÀí²ÉÆ÷×î´óÔÊĞíÉèÖÃµÄ¸öÊı(Ò»°ãÇé¿öÏÂOpenGLÔËĞĞ×î´ó16¸ö, ¿ÉÄÜ»á¸ü¸ß,²¢ÇÒopenglÖĞ
-	// ĞèÒª°ó¶¨ÎÆÀí±äÁ¿Ãûµ½ÎÆÀí±àºÅ, ¼ÙÉèOpenGLÔÊĞí×î´ó16¸öÎÆÀí,ÄÇÃ´ÎÆÀí±àºÅ´Ó0-15). 
-	// ±ÈÈç ÎÒÃÇ¶ÔÄ³¸öÍø¸ñÓÉ3¸öÂş·´ÉäÎÆÀí, 2¸ö¾µÃæ¹âÎÆÀí, ÄÇÃ´ÔÚ×ÅÉ«Æ÷ÖĞ Ó¦¸Ã»á±»ÉùÃ÷ÎªÈçÏÂ ±äÁ¿
 	// uniform sampler2D texture_diffuse1;
 	// uniform sampler2D textrue_diifuse2;
 	// uniform sampler2D texture_diffuse3;
 	// uniform sampler2D texture_specular1;
 	// uniform sampler2D texture_specular2;
 
-// ÒÀ¾İÕâ¸ö±ê×¼ ÎÒÃÇ¿ÉÒÔÔÚ×ÅÉ«Æ÷ÖĞ¶¨ÒåÈÎÒâÊıÁ¿µÄÎÆÀí²ÉÑùÆ÷, Èç¹ûÒ»¸öÍø¸ñÕæµÄ°üº¬ÁËÕâÃ´¶àµÄÎÆÀí, ÎÒÃÇÒ²ÄÜÖªµÀËûÃÇµÄÃû×ÖÊÇÊ²Ã´
+
 void Mesh::Draw(Shader& shader) {
 		GLuint diffuseNr = 1;
 		GLuint specularNr = 1;
 
 		for (GLuint i = 0; i < textures.size(); ++i) {
-			glActiveTexture(GL_TEXTURE0 + i);  // ¼¤»îÎÆÀíµ¥Ôª
-			// »ñµÃshaderÖĞ¶ÔÓ¦µÄÎÆÀí±êÊ¶
+			glActiveTexture(GL_TEXTURE0 + i);  
+			
 			std::string number;
 			std::string name = textures[i].type;
 			if (name == "texture_diffuse")
 				number = std::to_string(diffuseNr++);
 			else if (name == "texture_specular")
 				number = std::to_string(specularNr++);
-			// ÉèÖÃÎÆÀíµ¥ÔªĞòºÅ(0-15 ÖÁÉÙ)
-			// µ±Ç°¼¤»îµÄÎÆÀí±àºÅÊÇ i, ËùÒÔ½«material.texture_diffusei ÎÆÀí±äÁ¿
-			// °ó¶¨µ½ÎÆÀí±àºÅiÉÏ
+			
 			shader.setInt(("material." + name + number).c_str(), i);
 			glBindTexture(GL_TEXTURE_2D, textures[i].id);
 		}
 
-		// »æÖÆÍø¸ñ
+		
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
-		// »Ö¸´ÎªÄ¬ÈÏ¼¤»î×´Ì¬, Æğµ½Çå³ş×´Ì¬µÄĞ§¹û, ±ÜÃâµ±Ç°µÄ»æÖÆ×´Ì¬ Ó°Ïìµ½ÆäËûµÄMeshµÄ»æÖÆ¹¤×÷
+		
 		glBindVertexArray(0);
 		glActiveTexture(0);
 	}
@@ -66,18 +57,18 @@ void Mesh::setupMesh() {
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
 		glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint), &indices[0], GL_STATIC_DRAW);
 		
-		// ¶¥µãÎ»ÖÃ
+		
 		glEnableVertexAttribArray(0);
 		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)0);
 
-		// ¶¥µã·¨Ïß
+		
 		glEnableVertexAttribArray(1);
 		glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Vertex::Normal));
 
-		// ÎÆÀí×ø±ê
+		
 		glEnableVertexAttribArray(2);
 		glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Vertex::TexCoords));
 
-		// È¡Ïû¼¤»î´Ë VAO
+		// È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ VAO
 		glBindVertexArray(0);
 	}

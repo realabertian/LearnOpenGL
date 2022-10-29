@@ -1,5 +1,5 @@
 /*
-±íÊ¾Ò»¸ö¶¥µãÊý¾Ý, ²¢ÇÒ¸½´ø¸Ã¶¥µãµÄ ·¨Ïß·ÀÏß,ÒÔ¼° ÎÆÀí×ø±ê
+
 */
 #ifndef VERTEX_H
 #define VERTEX_H
@@ -11,24 +11,24 @@
 
 
 	struct Vertex {
-		/* ¶¥µãµÄ×ø±ê */
+		/* é¡¶ç‚¹ä½ç½® */
 		glm::vec3 Position;
 
-		/* ¶¥µãµÄ·¨Ïß */
+		/* é¡¶ç‚¹çš„æ³•çº¿ */
 		glm::vec3 Normal;
 
-		/* ¶¥µãµÄÎÆÀí×ø±ê */
+		/* é¡¶ç‚¹çš„çº¹ç†åæ ‡ */
 		glm::vec2 TexCoords;
 	};
 
 	struct Texture {
-		/* ÔÚOpenGLÖÐµÄÎÆÀíID */
+		/* çº¹ç†OpenGL ID */
 		GLuint id;
-		/* ÎÊÌâÀàÐÍ ¸ÃÀàÐÍ Ö¸Ã÷ÁË¸ÃÎÆÀíÊÇ Âþ·´ÉäÌùÍ¼ »¹ÊÇ ¾µÃæ¹âÌùÍ¼ */
-		// TODO ¿¼ÂÇÊ¹ÓÃ Ã¶¾ÙÀàÐÍÀ´±íÊ¾ ¿ÉÄÜ±È½ÏÓÉ¿É¶ÁÐÔÒÔ¼°Ö§³Ö¾²Ì¬±àÒë¼ì²é
+		/* çº¹ç†ç±»åž‹ */
+		// TODO 
 		std::string type;
 
-		aiString path; // ´æ´¢ÎÆÀíµÄ¼ÓÔØÂ·¾¶,ÓÃÓÚ±È½ÏÎÆÀíÊÇ·ñÏàÍ¬
+		aiString path; // çº¹ç†çš„åŠ è½½è·¯å¾„,ç”¨æ¥é¿å…é‡å¤åŠ è½½
 	};
 
 

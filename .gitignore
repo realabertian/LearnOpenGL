@@ -365,4 +365,5 @@ FodyWeavers.xsd
 # for build directories
 build/
 .vscode
+.vs
 CMakeSettings.json
